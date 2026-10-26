@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitySports | Play Your Way</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">CS</span>
+            <span>CITY<span class="brand-accent">SPORTS</span></span>
+        </a>
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="#facilities">Facilities</a>
+            <a href="booking.html">Book a Slot</a>
+            <a href="status.html">Booking Status</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">YOUR CITY. YOUR GAME.</span>
+                <h1>MAKE ROOM<br>FOR YOUR <span>GAME.</span></h1>
+                <p>
+                    Find your favourite sports facility, choose your time,
+                    and get ready to play. Your next game starts here.
+                </p>
+                <div class="hero-actions">
+                    <a href="#facilities" class="btn btn-primary">Explore Facilities ↗</a>
+                    <a href="status.html" class="btn btn-outline">My Bookings</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>04</strong><span>Sports Facilities</span></div>
+                    <div><strong>Easy</strong><span>Online Booking</span></div>
+                    <div><strong>24/7</strong><span>Browse Facilities</span></div>
+                </div>
+            </div>
+            <div class="hero-art" aria-label="Sports illustration">
+                <div class="art-circle"></div>
+                <div class="art-label">READY.<br>SET.<br><span>PLAY.</span></div>
+                <div class="art-ball">🏀</div>
+                <div class="art-tag">YOUR NEXT GAME STARTS HERE</div>
+            </div>
+        </section>
+
+        <section class="section" id="facilities">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FIND YOUR GAME</span>
+                    <h2>Explore <span>Facilities.</span></h2>
+                    <p>Choose a facility that matches your game.</p>
+                </div>
+                <span class="count-badge" id="facilityCount">4 facilities</span>
+            </div>
+
+            <div id="facilityList" class="facility-grid">
+                <p class="muted">Loading facilities...</p>
+            </div>
+            <p id="facilityMessage" class="message" role="status"></p>
+        </section>
+
+        <section class="cta-section">
+            <div>
+                <span class="eyebrow">YOUR GAME IS WAITING</span>
+                <h2>Pick a slot. <span>Get playing.</span></h2>
+                <p>Book your preferred municipal sports facility in a few steps.</p>
+            </div>
+            <a href="booking.html" class="btn btn-dark">Book Your Slot ↗</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">CS</span>
+            <span>CITY<span class="brand-accent">SPORTS</span></span>
+        </a>
+        <p>Municipal Sports Facility Booking System</p>
+        <p>© 2026 CitySports</p>
+    </footer>
+</body>
+</html>

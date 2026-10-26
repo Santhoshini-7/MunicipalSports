@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Slot | CitySports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="booking.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">CS</span>
+            <span>CITY<span class="brand-accent">SPORTS</span></span>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#facilities">Facilities</a>
+            <a class="active" href="booking.html">Book a Slot</a>
+            <a href="status.html">Booking Status</a>
+        </nav>
+    </header>
+
+    <main class="inner-page">
+        <div class="page-heading">
+            <span class="eyebrow">RESERVE YOUR GAME</span>
+            <h1>Book Your <span>Slot.</span></h1>
+            <p>Complete the form below to reserve your preferred facility.</p>
+        </div>
+
+        <div class="booking-layout">
+            <section class="panel">
+                <h2>Booking Details</h2>
+                <p class="muted">Fields marked * are required.</p>
+
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input id="name" name="name" type="text"
+                               placeholder="Enter your full name"
+                               minlength="2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="facility">Sports Facility *</label>
+                        <select id="facility" name="facilityId" required>
+                            <option value="">Choose a facility</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Booking Date *</label>
+                        <input id="date" name="date" type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeSlot">Available Time Slot *</label>
+                        <select id="timeSlot" name="timeSlot" required disabled>
+                            <option value="">Select a facility and date first</option>
+                        </select>
+                    </div>
+
+                    <div class="fee-panel">
+                        <span>Facility booking fee</span>
+                        <strong id="feeInfo">₹0</strong>
+                    </div>
+
+                    <button id="bookButton" type="submit" class="btn btn-primary btn-full">
+                        Confirm Booking ↗
+                    </button>
+
+                    <p id="bookingMessage" class="message" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <aside class="booking-aside">
+                <div class="aside-icon">🏆</div>
+                <span class="eyebrow">MAKE IT HAPPEN</span>
+                <h2>Your next game starts with one booking.</h2>
+                <p>Select a date and choose from the available time slots. Slots that have passed or have already been booked cannot be selected.</p>
+                <a href="index.html#facilities" class="text-link">← Browse facilities</a>
+                <div class="aside-note">
+                    <strong>Already booked?</strong>
+                    <p>Visit the booking status page to view or cancel your reservation.</p>
+                    <a href="status.html" class="text-link">View my bookings →</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">CS</span>
+            <span>CITY<span class="brand-accent">SPORTS</span></span>
+        </a>
+        <p>Municipal Sports Facility Booking System</p>
+        <p>© 2026 CitySports</p>
+    </footer>
+</body>
+</html>

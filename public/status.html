@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Status | CitySports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="status.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">CS</span>
+            <span>CITY<span class="brand-accent">SPORTS</span></span>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#facilities">Facilities</a>
+            <a href="booking.html">Book a Slot</a>
+            <a class="active" href="status.html">Booking Status</a>
+        </nav>
+    </header>
+
+    <main class="inner-page">
+        <div class="page-heading">
+            <span class="eyebrow">YOUR RESERVATIONS</span>
+            <h1>Booking <span>Status.</span></h1>
+            <p>View your reservations and manage your upcoming games.</p>
+        </div>
+
+        <section class="summary-grid">
+            <div class="summary-card">
+                <span>Total Bookings</span>
+                <strong id="totalCount">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Confirmed</span>
+                <strong id="confirmedCount">0</strong>
+            </div>
+            <div class="summary-card">
+                <span>Cancelled</span>
+                <strong id="cancelledCount">0</strong>
+            </div>
+        </section>
+
+        <section class="status-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">BOOKING HISTORY</span>
+                    <h2>Your <span>Bookings.</span></h2>
+                </div>
+                <button type="button" id="refreshBookings" class="btn btn-outline">
+                    ↻ Refresh
+                </button>
+            </div>
+
+            <p id="statusMessage" class="message" role="status" aria-live="polite"></p>
+            <div id="bookingList" class="booking-list">
+                <p class="muted">Loading bookings...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">CS</span>
+            <span>CITY<span class="brand-accent">SPORTS</span></span>
+        </a>
+        <p>Municipal Sports Facility Booking System</p>
+        <p>© 2026 CitySports</p>
+    </footer>
+</body>
+</html>
